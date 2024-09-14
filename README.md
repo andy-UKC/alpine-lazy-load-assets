@@ -81,6 +81,10 @@ Livewire.start();
 //position after an existing script. 
 <div data-js-after="app.js" x-load-js="['/path/to/your/js/file.js']"></div>
 ```
+* To load the script as a module (`type="module"`) use the `data-js-as-module` attribute
+```html
+<div data-js-as-module="true" x-load-js="['/path/to/your/js/file.js']"></div>
+```
 
 ### x-load-css
 * The `x-load-css` directive adds a `<link>` tag to the `<head>` of your document. 
